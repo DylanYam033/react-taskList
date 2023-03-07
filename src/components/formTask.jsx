@@ -34,7 +34,7 @@ function FormTask() {
           value={description}
           className="p-3 w-full mb-2 rounded-md"
         />
-        <button className="bg-indigo-700 px-3 py-1 text-white rounded-md">Guardar</button>
+        <button className="bg-indigo-700 px-3 py-1 text-white rounded-md mx-auto block">Guardar</button>
       </form>
     </div>
   );
