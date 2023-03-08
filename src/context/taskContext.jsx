@@ -29,8 +29,17 @@ function TaskContextProvider(props) {
     setTasks(newTask);
   }
 
+  function completedTask(id) {
+    const taskIndex = tasks.findIndex((task) => task.id === id);
+    const newTask = [...tasks];
+    newTask[taskIndex].completed = !newTask[taskIndex].completed;;
+    setTasks(newTask);
+  }
+
   return (
-    <TaskContext.Provider value={{ tasks, createTask, deleteTask }}>
+    <TaskContext.Provider
+      value={{ tasks, createTask, deleteTask, completedTask }}
+    >
       {props.children}
     </TaskContext.Provider>
   );

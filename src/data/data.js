@@ -14,13 +14,13 @@ const tasks = [
     id: 2,
     title: "Ser Feliz",
     description: "Ser feliz antes de salir",
-    completed: true,
+    completed: false,
   },
   {
     id: 3,
     title: "Ser amado",
     description: "Ser amado antes de salir",
-    completed: true,
+    completed: false,
   },
 ];
 
